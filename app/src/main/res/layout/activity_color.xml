@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.myechelon.trial.colorActivity">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:clickable="true"
+        android:paddingTop="15dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/color"
+            android:gravity="center"
+
+            android:background="@drawable/circle"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_directions_bus_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon"
+            android:text="Transport"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/Bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progressTint="@color/colorYellow"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/color"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title1"
+            android:layout_alignStart="@+id/title1" />
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title1"
+            android:layout_alignBottom="@+id/title1"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/timee1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title1"
+            android:layout_alignBottom="@+id/title1"
+            android:layout_toLeftOf="@+id/time1"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/butt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change color"
+        android:layout_below="@+id/relative"
+        />
+</RelativeLayout>

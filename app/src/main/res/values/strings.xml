@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">e-Kofi</string>
+    <string name="add">add</string>
+    <string-array name="categories">
+        <item>Transport</item>
+        <item>Housing</item>
+        <item>Food</item>
+        <item>Shopping</item>
+        <item>Leasure</item>
+        <item>Gifts</item>
+        <item>Health</item>
+        <item>Airtime</item>
+        <item>Loans</item>
+        <item>Investments</item>
+        <item>Others</item>
+
+    </string-array>
+</resources>

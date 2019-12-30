@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBlue"
+
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        style="@style/add"
+        app:popupTheme="@style/popup"
+
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="1"
+
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/toolbar"
+        >
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="250dp"
+        app:layout_gravity="center"
+        android:theme="@style/popup"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/grid2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+
+        />
+    </android.support.v7.widget.GridLayout>
+        <android.support.v7.widget.GridLayout
+        android:id="@+id/grid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="2"
+        android:layout_below="@+id/grid1"
+        >
+        <RelativeLayout
+            android:id="@+id/expp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorRed"
+            app:layout_columnWeight="1"
+
+            android:layout_marginTop="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expenses"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+
+
+
+                />
+            <TextView
+                android:id="@+id/exp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8800RWF"
+                android:textSize="17dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+                android:layout_below="@+id/textView6"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/incomee"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colordGreen"
+            app:layout_columnWeight="1"
+
+            android:layout_marginTop="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incomes"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+
+
+
+                />
+            <TextView
+                android:id="@+id/income1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="10000RWF"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorGreen"
+                android:layout_below="@+id/textView8"
+
+
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.GridLayout>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/grid2"
+    >
+
+</android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

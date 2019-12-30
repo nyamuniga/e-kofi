@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBlue"
+
+    >
+
+   <android.support.v7.widget.GridLayout
+        android:id="@+id/gridd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="1"
+
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/toolbar1"
+        >
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="250dp"
+            app:layout_gravity="center"
+            android:theme="@style/popup"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/grid2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp"
+
+            />
+   </android.support.v7.widget.GridLayout>
+   <android.support.v7.widget.GridLayout
+        android:id="@+id/gridd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="2"
+        android:layout_below="@+id/gridd1"
+        >
+
+        <RelativeLayout
+            android:id="@+id/incomee"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colordGreen"
+            app:layout_columnWeight="1"
+
+            android:layout_marginTop="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incomes"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+
+
+
+                />
+            <TextView
+                android:id="@+id/incomee1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="10000RWF"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorGreen"
+                android:layout_below="@+id/textView8"
+
+
+                />
+        </RelativeLayout>
+   </android.support.v7.widget.GridLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gridd2"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

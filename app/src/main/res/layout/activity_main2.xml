@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBlue"
+
+    >
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/grid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="2"
+
+        >
+       <RelativeLayout
+           android:id="@+id/relex"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:background="@color/colorRed"
+           app:layout_columnWeight="1"
+
+          android:layout_marginTop="0dp"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           >
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expenses"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+
+
+
+            />
+           <TextView
+               android:id="@+id/exp1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="8800RWF"
+               android:textSize="17dp"
+               android:layout_centerHorizontal="true"
+               android:textColor="@color/colorWhite"
+               android:layout_below="@+id/textView6"
+
+               />
+       </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colordGreen"
+            app:layout_columnWeight="1"
+
+            android:layout_marginTop="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incomes"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+
+
+
+                />
+            <TextView
+                android:id="@+id/income1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="10000RWF"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorGreen"
+                android:layout_below="@+id/textView8"
+
+
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.GridLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/grid2"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+       android:background="@color/colorGrey"
+
+
+        />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/grid3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:columnCount="3"
+        android:layout_below="@+id/barchart"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/darkred"
+            app:layout_columnWeight="1"
+
+            android:layout_marginTop="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day(avg.)"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+
+
+
+                />
+            <TextView
+                android:id="@+id/avg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0RWF"
+                android:textSize="17dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorRed"
+                android:layout_below="@+id/textView3"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            app:layout_columnWeight="1"
+            android:background="@drawable/darkred"
+            android:layout_marginTop="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+
+
+
+                />
+            <TextView
+                android:id="@+id/today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="0RWF"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorRed"
+                android:layout_below="@+id/textView11"
+
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            app:layout_columnWeight="1"
+            android:background="@drawable/darkred"
+            android:layout_marginTop="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Week"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+
+
+
+                />
+            <TextView
+                android:id="@+id/week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="0RWF"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorRed"
+                android:layout_below="@+id/textView13"
+
+
+                />
+
+        </RelativeLayout>
+   </android.support.v7.widget.GridLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/grid3"
+    >
+    <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:clickable="true"
+        android:paddingTop="15dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ico"
+            android:gravity="center"
+            android:background="@drawable/circle9"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_home_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/ico"
+            android:text="Housing"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBa"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progressTint="@color/colorLPurple"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/ico"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title"
+            android:layout_alignBottom="@+id/title"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/timee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title"
+            android:layout_alignBottom="@+id/title"
+            android:layout_toLeftOf="@+id/time"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+       android:clickable="true"
+        android:paddingTop="15dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@+id/r"
+        >
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon"
+            android:gravity="center"
+            android:background="@drawable/circle"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_directions_bus_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon"
+            android:text="Transport"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+           android:progressTint="@color/colorYellow"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/icon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title1"
+            android:layout_alignStart="@+id/title1" />
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title1"
+            android:layout_alignBottom="@+id/title1"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/timee1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title1"
+            android:layout_alignBottom="@+id/title1"
+           android:layout_toLeftOf="@+id/time1"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r12"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:paddingBottom="15dp"
+        android:clickable="true"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/r1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+<RelativeLayout
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/icon2"
+    android:gravity="center"
+    android:background="@drawable/circle2"
+    >
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+
+              android:tint="@color/colorWhite"
+
+            android:src="@drawable/ic_shopping_basket_black_24dp"
+
+            />
+</RelativeLayout>
+        <TextView
+            android:id="@+id/title12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon2"
+            android:text="Shopping"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progressTint="@color/colorPrimary"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/icon2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title12"
+            android:layout_alignStart="@+id/title12" />
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+
+            android:textSize="18dp"
+            android:layout_alignBaseline="@+id/title12"
+            android:layout_alignBottom="@+id/title12"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/timee12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title12"
+            android:layout_alignBottom="@+id/title12"
+            android:layout_toLeftOf="@+id/time2"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/r123"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:paddingBottom="15dp"
+        android:clickable="true"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/r12"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon23"
+            android:gravity="center"
+            android:background="@drawable/cicle3"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_local_hospital_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon23"
+            android:text="Health"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar23"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progressTint="@color/colorGreen"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/icon23"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title123"
+            android:layout_alignStart="@+id/title123" />
+        <TextView
+            android:id="@+id/time23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+
+            android:textSize="18dp"
+            android:layout_alignBaseline="@+id/title123"
+            android:layout_alignBottom="@+id/title123"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/timee123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title123"
+            android:layout_alignBottom="@+id/title123"
+            android:layout_toLeftOf="@+id/time23"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/r1234"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/r123"
+        android:clickable="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon234"
+            android:gravity="center"
+            android:background="@drawable/cicle6"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_restaurant_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title1234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon234"
+            android:text="Food"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar234"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progressTint="@color/colorRose"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/icon234"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title1234"
+            android:layout_alignStart="@+id/title1234" />
+        <TextView
+            android:id="@+id/time234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+
+            android:textSize="18dp"
+            android:layout_alignBaseline="@+id/title1234"
+            android:layout_alignBottom="@+id/title1234"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/timee1234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title1234"
+            android:layout_alignBottom="@+id/title1234"
+            android:layout_toLeftOf="@+id/time234"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/r12345"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/r1234"
+        android:clickable="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon2345"
+            android:gravity="center"
+            android:background="@drawable/circle4"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_settings_phone_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title12345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon2345"
+            android:text="Airtime"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2345"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progressTint="@color/colorBlue"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/icon2345"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title12345"
+            android:layout_alignStart="@+id/title12345" />
+        <TextView
+            android:id="@+id/time2345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+
+            android:textSize="18dp"
+            android:layout_alignBaseline="@+id/title12345"
+            android:layout_alignBottom="@+id/title12345"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/timee12345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title12345"
+            android:layout_alignBottom="@+id/title12345"
+            android:layout_toLeftOf="@+id/time2345"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/r123456"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:clickable="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@+id/r12345"
+        >
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon23456"
+            android:gravity="center"
+            android:background="@drawable/circle5"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_attach_money_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title123456"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon23456"
+            android:text="Loans"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar23456"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progress="0"
+            android:progressTint="@color/colorBrown"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/icon23456"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title123456"
+            android:layout_alignStart="@+id/title123456" />
+        <TextView
+            android:id="@+id/time23456"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+
+            android:textSize="18dp"
+            android:layout_alignBaseline="@+id/title123456"
+            android:layout_alignBottom="@+id/title123456"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/timee123456"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title123456"
+            android:layout_alignBottom="@+id/title123456"
+            android:layout_toLeftOf="@+id/time23456"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r1234567"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:clickable="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@+id/r123456"
+        >
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon234567"
+            android:gravity="center"
+            android:background="@drawable/circle8"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_card_giftcard_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title1234567"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon234567"
+            android:text="Gifts"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar234567"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progress="0"
+            android:progressTint="@color/colorPink"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/icon234567"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title1234567"
+            android:layout_alignStart="@+id/title1234567" />
+        <TextView
+            android:id="@+id/time234567"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+
+            android:textSize="18dp"
+            android:layout_alignBaseline="@+id/title1234567"
+            android:layout_alignBottom="@+id/title1234567"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/timee1234567"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title1234567"
+            android:layout_alignBottom="@+id/title1234567"
+            android:layout_toLeftOf="@+id/time234567"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/r12345678"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:clickable="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@+id/r1234567"
+        >
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon2345678"
+            android:gravity="center"
+            android:background="@drawable/circle7"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_local_movies_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title12345678"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon2345678"
+            android:text="Leasure"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2345678"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progress="0"
+            android:progressTint="@color/colorOrange"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/icon2345678"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title12345678"
+            android:layout_alignStart="@+id/title12345678" />
+        <TextView
+            android:id="@+id/time2345678"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+
+            android:textSize="18dp"
+            android:layout_alignBaseline="@+id/title12345678"
+            android:layout_alignBottom="@+id/title12345678"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/timee12345678"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title12345678"
+            android:layout_alignBottom="@+id/title12345678"
+            android:layout_toLeftOf="@+id/time2345678"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r123456789"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:clickable="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@+id/r12345678"
+        >
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon23456789"
+            android:gravity="center"
+            android:background="@drawable/circle10"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_show_chart_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title123456789"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon23456789"
+            android:text="Investments"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar23456789"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progress="0"
+            android:progressTint="@color/colorLGreen"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/icon23456789"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title123456789"
+            android:layout_alignStart="@+id/title123456789" />
+        <TextView
+            android:id="@+id/time23456789"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+
+            android:textSize="18dp"
+            android:layout_alignBaseline="@+id/title123456789"
+            android:layout_alignBottom="@+id/title123456789"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/timee123456789"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title123456789"
+            android:layout_alignBottom="@+id/title123456789"
+            android:layout_toLeftOf="@+id/time23456789"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r12345678910"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/grey"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:clickable="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@+id/r123456789"
+        >
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/icon2345678910"
+            android:gravity="center"
+            android:background="@drawable/circle11"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:tint="@color/colorWhite"
+
+                android:src="@drawable/ic_format_list_bulleted_black_24dp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title12345678910"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/icon2345678910"
+            android:text="Others"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2345678910"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:progress="0"
+            android:progressTint="@color/colorLGrey"
+            android:background="@color/colordgrey"
+            android:layout_alignBottom="@+id/icon2345678910"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/title12345678910"
+            android:layout_alignStart="@+id/title12345678910" />
+        <TextView
+            android:id="@+id/time2345678910"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0rwf"
+            android:textColor="@color/colorGrey"
+
+            android:textSize="18dp"
+            android:layout_alignBaseline="@+id/title12345678910"
+            android:layout_alignBottom="@+id/title12345678910"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/timee12345678910"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title12345678910"
+            android:layout_alignBottom="@+id/title12345678910"
+            android:layout_toLeftOf="@+id/time2345678910"
+
+            android:layout_marginRight="5dp"
+            android:text="0%"
+            android:textColor="@color/colordgrey"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

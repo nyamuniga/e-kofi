@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBlue"
+    tools:context="co.myechelon.trial.details">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="30dp"
+        >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+
+                >
+
+
+
+                <TextView
+                    android:id="@+id/txttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtcat"
+                    android:layout_marginTop="30dp"
+                    android:text="Specify:"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/typ"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txttype"
+                    android:layout_below="@+id/spinner2"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/txttype"
+                    android:hint="example:Taxi" />
+
+                <TextView
+                    android:id="@+id/txtamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txttype"
+                    android:layout_marginTop="30dp"
+                    android:text="Amount:"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/mny"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtamount"
+                    android:layout_below="@+id/typ"
+                    android:layout_marginLeft="4dp"
+                    android:inputType="number"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/txtamount"
+                    android:hint="example:3000" />
+
+                <TextView
+                    android:id="@+id/txtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mny"
+                    android:layout_marginTop="20dp"
+                    android:text="Date:"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/dat"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtt"
+                    android:layout_below="@+id/mny"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/txtt"
+                    android:hint="example:work" />
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dat"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/cicle3"
+                    android:text="update"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/update"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/cicle6"
+                    android:text="delete"
+                    android:textColor="@color/colorWhite" />
+
+
+            </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

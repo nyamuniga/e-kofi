@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBlue"
+    tools:context="co.myechelon.trial.post">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="30dp"
+        >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/txtcat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category:"
+                    android:textSize="20dp"
+
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/txtcat"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/txttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtcat"
+                    android:layout_marginTop="30dp"
+                    android:text="Specify:"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txttype"
+                    android:layout_below="@+id/spinner2"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/txttype"
+                    android:hint="example:Taxi" />
+
+                <TextView
+                    android:id="@+id/txtamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txttype"
+                    android:layout_marginTop="30dp"
+                    android:text="Amount:"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtamount"
+                    android:layout_below="@+id/type"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="number"
+                    android:layout_toRightOf="@+id/txtamount"
+                    android:hint="example:3000" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/money"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/cicle6"
+                    android:text="Add EXPENSE"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/txtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/submit"
+                    android:layout_marginTop="50dp"
+                    android:text="Source:"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtt"
+                    android:layout_below="@+id/submit"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/txtt"
+                    android:hint="example:work" />
+
+                <TextView
+                    android:id="@+id/txttt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtt"
+                    android:layout_marginTop="30dp"
+                    android:text="Amount:"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/mony"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txttt"
+                    android:layout_below="@+id/source"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="number"
+                    android:layout_toRightOf="@+id/txttt"
+                    android:hint="example:30000" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mony"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/cicle3"
+                    android:text="Add income"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/viewall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/circle2"
+                    android:drawableTint="@color/colorWhite"
+                    android:text="close"
+                    android:textColor="@color/colorWhite" />
+
+
+            </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+    </ScrollView>
+</RelativeLayout>
